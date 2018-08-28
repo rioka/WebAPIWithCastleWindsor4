@@ -20,3 +20,12 @@ Sample OWIN WebAPI project using Castle Windsor 4.x
   * `.\Startup.cs`
   * `.\App_Start\Startup.Auth.cs`
   * `.\App_Start\WebApiConfig.cs`
+
+## Add code
+* Create a `Controllers` folder
+* Create file `.\Controllers\ValuesController.cs`
+* Add code to
+  * `.\App_Start\WebApiConfig.cs`
+  * `Startup.cs`
+
+Now you have a working OWIN Web API application
