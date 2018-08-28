@@ -1,4 +1,5 @@
-﻿using Microsoft.Owin;
+﻿using System.Web.Http;
+using Microsoft.Owin;
 using Owin;
 using WebAPIWithCastleWindsor4.Api;
 
@@ -13,7 +14,13 @@ namespace WebAPIWithCastleWindsor4.Api
     /// Owin configuration module
     /// </summary>
     /// <param name="app">Application builder</param>
-    public void Configuration(IAppBuilder app) {}
+    public void Configuration(IAppBuilder app)
+    {
+      var config = new HttpConfiguration();
+      WebApiConfig.Register(config);
+
+      app.UseWebApi(config);
+    }
 
     #endregion
   }
