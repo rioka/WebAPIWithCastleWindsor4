@@ -1,5 +1,6 @@
 # WebAPIWithCastleWindsor4
-Sample OWIN WebAPI project using Castle Windsor 4.x
+Sample OWIN WebAPI project using Castle Windsor 5.x
+(Note there is no ready-to-use package for 4.x: will wait until 5.0 is released)
 
 ## Create an OWIN WebAPI project from scratch
 * Create an empty project, no references
@@ -38,3 +39,5 @@ Now you have a working OWIN Web API application
 
 Site will stop working
 
+## Install Castle.Windsor
+* Wait for Castle.Windsor 5.0
